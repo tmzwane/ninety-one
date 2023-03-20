@@ -82,3 +82,6 @@ class CustomParser:
                     self.processedData.append(data)
 
         return self.processedData
+    
+    def reset_processed_data(self):
+        self.processedData = []
