@@ -1,0 +1,19 @@
+[tool.poetry]
+name = "ninety-one-assessment"
+version = "0.1.0"
+description = "Get the top scorers from a CSV input and display them in an alphabetical order"
+authors = ["Thabang <tmzwane1@gmail.com>"]
+license = "MIT"
+
+[tool.poetry.dependencies]
+python = "^3.10"
+jupyter = "^1.0.0"
+notebook = "^6.5.3"
+
+[tool.poetry.dev-dependencies]
+black = "^23.1.0"
+autopep8 = "^2.0.2"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
