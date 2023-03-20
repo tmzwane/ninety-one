@@ -8,7 +8,7 @@ class CustomParser:
         if os.path.isfile(fileLocation):
             self.fileLocation = fileLocation
         else:
-            self.fileLocation = None
+            self.fileLocation = defaultTestFile
 
         self.delimiter = delimiter
         self.rawContents = None
