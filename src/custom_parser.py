@@ -1,7 +1,10 @@
 import os
 
+ABS_PATH = os.path.dirname(os.path.abspath(__file__))
+defaultTestFile = os.path.join(ABS_PATH, "..", "datasets", "TestData.csv")
+
 class CustomParser:
-    def __init__(self, fileLocation: str = None, delimiter: str = ",") -> None:
+    def __init__(self, fileLocation: str = defaultTestFile, delimiter: str = ",") -> None:
         if os.path.isfile(fileLocation):
             self.fileLocation = fileLocation
         else:
